@@ -15,6 +15,7 @@ const translations = {
     'hero.desc':  'Más de 11 años de experiencia en el ciclo de vida del desarrollo de software. Mi carrera une la Automatización de Pruebas de alta precisión con el Desarrollo Backend robusto, con foco actual en IA Generativa y el diseño de soluciones autónomas con AI Agents.',
     'hero.cta1':  'Ver Proyectos de Automatización',
     'hero.cta2':  'Ver Proyectos de Desarrollo',
+    'hero.cv':    'Descargar CV',
     // About
     'about.title':   'Acerca de Mí',
     'about.lead':    'Con más de 11 años de experiencia integral en el SDLC, mi carrera une la Automatización de Pruebas de alta precisión con el Desarrollo Backend robusto, en la intersección de la ingeniería tradicional y la Inteligencia Artificial Generativa.',
@@ -122,6 +123,7 @@ const translations = {
     'hero.desc':  'Over 11 years of comprehensive experience across the software development lifecycle. My career bridges high-precision Test Automation with robust Backend Development, with a current focus on Generative AI and the design of autonomous solutions with AI Agents.',
     'hero.cta1':  'View Automation Projects',
     'hero.cta2':  'View Development Projects',
+    'hero.cv':    'Download CV',
     // About
     'about.title':   'About Me',
     'about.lead':    'With over 11 years of comprehensive experience in the SDLC, my career bridges high-precision Test Automation with robust Backend Development, at the intersection of traditional engineering and Generative Artificial Intelligence.',
