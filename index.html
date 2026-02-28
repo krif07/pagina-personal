@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Dávila - Proyectos</title>
-    <meta name="description"
+    <title data-i18n="meta.title">Cristian Dávila - Proyectos</title>
+    <meta name="description" data-i18n="meta.desc"
         content="Proyectos de Cristian Dávila, Test Automation Engineer y Backend Developer con más de 11 años de experiencia.">
 
     <!-- Google Fonts -->
@@ -29,15 +29,18 @@
         <div class="container">
             <a href="#" class="logo">Cristian Dávila</a>
             <ul class="nav-links">
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#portfolio">Proyectos</a></li>
-                <li><a href="#contact" class="btn-nav">Contacto</a></li>
+                <li><a href="#about" data-i18n="nav.about">Acerca de</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+                <li><a href="#education" data-i18n="nav.education">Educación</a></li>
+                <li><a href="#portfolio" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Contacto</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="navbar-right">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -48,22 +51,22 @@
             <div class="hero-text">
                 <h1 class="animate-fade-up">Cristian Dávila</h1>
                 <h2 class="animate-fade-up delay-1">Test Automation Engineer <br>& Backend Developer</h2>
-                <p class="animate-fade-up delay-2">
+                <p class="animate-fade-up delay-2" data-i18n="hero.desc">
                     Más de 11 años de experiencia en el ciclo de vida del desarrollo de software. Mi carrera une la
                     Automatización de Pruebas de alta precisión con el Desarrollo Backend robusto, con foco actual
                     en IA Generativa y el diseño de soluciones autónomas con AI Agents.
                 </p>
                 <div class="cta-buttons animate-fade-up delay-3">
-                    <a href="#portfolio" class="btn btn-primary">Ver Proyectos de Automatización</a>
-                    <a href="#portfolio" class="btn btn-secondary">Ver Proyectos de Desarrollo</a>
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.cta1">Ver Proyectos de
+                        Automatización</a>
+                    <a href="#portfolio" class="btn btn-secondary" data-i18n="hero.cta2">Ver Proyectos de Desarrollo</a>
                 </div>
                 <div class="social-links animate-fade-up delay-4">
-                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cfdl/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/krif07" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="hero-image animate-fade-in delay-2">
-                <!-- Placeholder for professional photo -->
                 <div class="img-placeholder">
                     <i class="fas fa-user-code"></i>
                 </div>
@@ -74,42 +77,46 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Acerca de Mí</h2>
+            <h2 class="section-title" data-i18n="about.title">Acerca de Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead">Con más de 11 años de experiencia integral en el SDLC, mi carrera une la
+                    <p class="lead" data-i18n="about.lead">Con más de 11 años de experiencia integral en el SDLC, mi
+                        carrera une la
                         Automatización de Pruebas de alta precisión con el Desarrollo Backend robusto, en la
                         intersección de la ingeniería tradicional y la Inteligencia Artificial Generativa.</p>
                     <ul class="about-list">
                         <li>
                             <i class="fas fa-robot"></i>
                             <div>
-                                <strong>Quality Engineering (SDET):</strong>
-                                <p>5+ años liderando estrategias de automatización con Playwright, Selenium WebDriver,
+                                <strong data-i18n="about.p1.title">Quality Engineering (SDET):</strong>
+                                <p data-i18n="about.p1.desc">5+ años liderando estrategias de automatización con
+                                    Playwright, Selenium WebDriver,
                                     SerenityBDD, TestNG y Cucumber, en entornos Jira y Azure DevOps.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-server"></i>
                             <div>
-                                <strong>Arquitectura Backend:</strong>
-                                <p>6+ años construyendo sistemas escalables. Especialista en Java (Spring Boot) y Python
+                                <strong data-i18n="about.p2.title">Arquitectura Backend:</strong>
+                                <p data-i18n="about.p2.desc">6+ años construyendo sistemas escalables. Especialista en
+                                    Java (Spring Boot) y Python
                                     (Django REST Framework) para servicios REST API de alto rendimiento.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-brain"></i>
                             <div>
-                                <strong>Innovación con IA:</strong>
-                                <p>Early adopter de Cursor AI y GitHub Copilot para acelerar ciclos de desarrollo.
+                                <strong data-i18n="about.p3.title">Innovación con IA:</strong>
+                                <p data-i18n="about.p3.desc">Early adopter de Cursor AI y GitHub Copilot para acelerar
+                                    ciclos de desarrollo.
                                     Actualmente especializándome en el desarrollo de AI Agents con Python.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-language"></i>
                             <div>
-                                <strong>Idiomas:</strong>
-                                <p>Español (nativo - C2) y Inglés (avanzado - B2).</p>
+                                <strong data-i18n="about.p4.title">Idiomas:</strong>
+                                <p data-i18n="about.p4.desc">Español (nativo - C2) y Inglés (avanzado - B2).</p>
                             </div>
                         </li>
                     </ul>
@@ -121,11 +128,11 @@
     <!-- Skills Section -->
     <section id="skills" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
+            <h2 class="section-title" data-i18n="skills.title">Habilidades Técnicas</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>IA & Automatización Inteligente</h3>
+                    <h3 data-i18n="skills.cat1">IA & Automatización Inteligente</h3>
                     <div class="tags">
                         <span>AI Agents (Python)</span>
                         <span>Cursor AI</span>
@@ -147,7 +154,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Desarrollo Backend</h3>
+                    <h3 data-i18n="skills.cat3">Desarrollo Backend</h3>
                     <div class="tags">
                         <span>Java</span>
                         <span>Python</span>
@@ -159,7 +166,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                    <h3>DevOps & Gestión</h3>
+                    <h3 data-i18n="skills.cat4">DevOps & Gestión</h3>
                     <div class="tags">
                         <span>Azure DevOps</span>
                         <span>Jira</span>
@@ -176,37 +183,41 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Experiencia Profesional</h2>
+            <h2 class="section-title" data-i18n="exp.title">Experiencia Profesional</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jun. 2025 – Presente</div>
+                    <div class="timeline-date" data-i18n="exp.g1.date">Jun. 2025 – Presente</div>
                     <div class="timeline-content">
                         <h3>Test Automation Engineer</h3>
-                        <h4>Globant — Pereira, Colombia <span class="client-tag">Cliente: Empower</span></h4>
+                        <h4>Globant — Pereira, Colombia <span class="client-tag" data-i18n="exp.g1.client">Cliente:
+                                Empower</span></h4>
                         <ul>
-                            <li>Automatización de casos de prueba de UI y API para los flujos de apertura de cuentas.
+                            <li data-i18n="exp.g1.li1">Automatización de casos de prueba de UI y API para los flujos de
+                                apertura de cuentas.</li>
+                            <li data-i18n="exp.g1.li2">Automatización de casos de prueba para el dashboard de Net Worth.
                             </li>
-                            <li>Automatización de casos de prueba para el dashboard de Net Worth.</li>
-                            <li>Creación de casos de prueba, reporte de errores y aseguramiento de calidad con Jira.
-                            </li>
+                            <li data-i18n="exp.g1.li3">Creación de casos de prueba, reporte de errores y aseguramiento
+                                de calidad con Jira.</li>
                         </ul>
                         <div class="tags"><span>Selenium WebDriver</span><span>Python</span><span>Jira</span></div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Ago. 2023 – Jun. 2025</div>
+                    <div class="timeline-date" data-i18n="exp.im.date">Ago. 2023 – Jun. 2025</div>
                     <div class="timeline-content">
                         <h3>QA Automation Engineer</h3>
                         <h4>Imagemaker — Pereira, Colombia</h4>
                         <ul>
-                            <li>Automatización de casos de prueba para el proyecto E2E Sales de una compañía de salud y
-                                seguros.</li>
-                            <li>Diseño de casos de prueba, reporte de bugs y aseguramiento de calidad bajo metodologías
-                                ágiles.</li>
-                            <li>Gestión de tareas, bugs y actividades de testing en Azure DevOps.</li>
-                            <li>Revisiones semanales de reportes generados por proyectos de automatización.</li>
+                            <li data-i18n="exp.im.li1">Automatización de casos de prueba para el proyecto E2E Sales de
+                                una compañía de salud y seguros.</li>
+                            <li data-i18n="exp.im.li2">Diseño de casos de prueba, reporte de bugs y aseguramiento de
+                                calidad bajo metodologías ágiles.</li>
+                            <li data-i18n="exp.im.li3">Gestión de tareas, bugs y actividades de testing en Azure DevOps.
+                            </li>
+                            <li data-i18n="exp.im.li4">Revisiones semanales de reportes generados por proyectos de
+                                automatización.</li>
                         </ul>
                         <div class="tags"><span>Selenium WebDriver</span><span>Java</span><span>Azure
                                 DevOps</span><span>Postman</span></div>
@@ -217,12 +228,15 @@
                     <div class="timeline-date">Mar. 2020 – Ago. 2023</div>
                     <div class="timeline-content">
                         <h3>Java/Python Developer & Test Automation Engineer</h3>
-                        <h4>Globant — Medellín, Colombia <span class="client-tag">Cliente: Disney</span></h4>
+                        <h4>Globant — Medellín, Colombia <span class="client-tag" data-i18n="exp.g2.client">Cliente:
+                                Disney</span></h4>
                         <ul>
-                            <li>Automatización de casos de prueba para la plataforma Salesforce (C&W Communications),
-                                Media Search, M360 y Media service – Transform Project.</li>
-                            <li>Automatización y testing de casos de API con Robot Framework y Postman.</li>
-                            <li>Creación de pipelines de CI/CD en GitLab/Jenkins e integración con Report Portal.</li>
+                            <li data-i18n="exp.g2.li1">Automatización de casos de prueba para la plataforma Salesforce
+                                (C&W Communications), Media Search, M360 y Media service – Transform Project.</li>
+                            <li data-i18n="exp.g2.li2">Automatización y testing de casos de API con Robot Framework y
+                                Postman.</li>
+                            <li data-i18n="exp.g2.li3">Creación de pipelines de CI/CD en GitLab/Jenkins e integración
+                                con Report Portal.</li>
                         </ul>
                         <div class="tags"><span>Selenium WebDriver</span><span>Robot
                                 Framework</span><span>Python</span><span>Jira</span></div>
@@ -230,16 +244,16 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Ene. 2019 – Feb. 2020</div>
+                    <div class="timeline-date" data-i18n="exp.in.date">Ene. 2019 – Feb. 2020</div>
                     <div class="timeline-content">
                         <h3>Python Developer</h3>
                         <h4>Indra — Pereira, Colombia</h4>
                         <ul>
-                            <li>Desarrollo de servicios REST API para Poste Italiane (software de venta y mantenimiento
-                                de POS).</li>
-                            <li>Desarrollo para SAVA (portal de turismo español para gestión y venta de productos
-                                turísticos).</li>
-                            <li>Construcción de queries SQL en Postgres.</li>
+                            <li data-i18n="exp.in.li1">Desarrollo de servicios REST API para Poste Italiane (software de
+                                venta y mantenimiento de POS).</li>
+                            <li data-i18n="exp.in.li2">Desarrollo para SAVA (portal de turismo español para gestión y
+                                venta de productos turísticos).</li>
+                            <li data-i18n="exp.in.li3">Construcción de queries SQL en Postgres.</li>
                         </ul>
                         <div class="tags"><span>Django REST Framework</span><span>Python</span><span>PostgreSQL</span>
                         </div>
@@ -247,44 +261,48 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Feb. 2016 – Dic. 2018</div>
+                    <div class="timeline-date" data-i18n="exp.sena.date">Feb. 2016 – Dic. 2018</div>
                     <div class="timeline-content">
                         <h3>Web Developer</h3>
                         <h4>SENA — Pereira, Colombia</h4>
                         <ul>
-                            <li>Diseño, implementación y mantenimiento de Objetos Virtuales de Aprendizaje (VLO).</li>
-                            <li>Creación y mantenimiento del documento de estándares front-end.</li>
-                            <li>Gestión de contenido web en Blackboard LMS y construcción de servicios SCORM.</li>
+                            <li data-i18n="exp.sena.li1">Diseño, implementación y mantenimiento de Objetos Virtuales de
+                                Aprendizaje (VLO).</li>
+                            <li data-i18n="exp.sena.li2">Creación y mantenimiento del documento de estándares front-end.
+                            </li>
+                            <li data-i18n="exp.sena.li3">Gestión de contenido web en Blackboard LMS y construcción de
+                                servicios SCORM.</li>
                         </ul>
                         <div class="tags"><span>JavaScript</span><span>Adobe Animate CC</span><span>LMS</span></div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Feb. 2015 – Dic. 2015</div>
+                    <div class="timeline-date" data-i18n="exp.utp.date">Feb. 2015 – Dic. 2015</div>
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
                         <h4>Universidad Tecnológica de Pereira — Pereira, Colombia</h4>
                         <ul>
-                            <li>Mejoras y mantenimiento del sistema financiero web (ExtJS, Java, Spring, PL/SQL,
-                                Oracle).
-                            </li>
-                            <li>Diseño e implementación del subsistema de "compras y suministros" en Java.</li>
-                            <li>Diseño e implementación del subsistema de "contratación".</li>
+                            <li data-i18n="exp.utp.li1">Mejoras y mantenimiento del sistema financiero web (ExtJS, Java,
+                                Spring, PL/SQL, Oracle).</li>
+                            <li data-i18n="exp.utp.li2">Diseño e implementación del subsistema de "compras y
+                                suministros" en Java.</li>
+                            <li data-i18n="exp.utp.li3">Diseño e implementación del subsistema de "contratación".</li>
                         </ul>
                         <div class="tags"><span>Java</span><span>PL-SQL</span><span>JavaScript</span></div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Abr. 2011 – Nov. 2013</div>
+                    <div class="timeline-date" data-i18n="exp.oc.date">Abr. 2011 – Nov. 2013</div>
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
                         <h4>Oceanic Casa de Software — Pereira, Colombia</h4>
                         <ul>
-                            <li>Desarrollo y mantenimiento de aplicaciones financieras, contables y de punto de venta.
-                            </li>
-                            <li>Construcción de reportes y queries de base de datos para clientes.</li>
+                            <li data-i18n="exp.oc.li1">Desarrollo y mantenimiento de aplicaciones financieras, contables
+                                y de punto de venta.</li>
+                            <li data-i18n="exp.oc.li2">Construcción de reportes y queries de base de datos para
+                                clientes.</li>
                         </ul>
                         <div class="tags"><span>Java</span><span>SQL</span><span>JavaScript</span></div>
                     </div>
@@ -296,13 +314,13 @@
     <!-- Education Section -->
     <section id="education" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Educación</h2>
+            <h2 class="section-title" data-i18n="edu.title">Educación</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Ago. 2002 – Dic. 2008</div>
+                    <div class="timeline-date" data-i18n="edu.date">Ago. 2002 – Dic. 2008</div>
                     <div class="timeline-content">
-                        <h3>Ingeniería de Sistemas</h3>
+                        <h3 data-i18n="edu.degree">Ingeniería de Sistemas</h3>
                         <h4>Universidad Tecnológica de Pereira — Pereira, Colombia</h4>
                     </div>
                 </div>
@@ -313,12 +331,13 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2 class="section-title">Proyectos</h2>
+            <h2 class="section-title" data-i18n="proj.title">Proyectos</h2>
 
             <!-- Filter Bar -->
             <div class="filter-bar">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="automatizacion">Automatización</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="proj.filter.all">Todos</button>
+                <button class="filter-btn" data-filter="automatizacion"
+                    data-i18n="proj.filter.auto">Automatización</button>
                 <button class="filter-btn" data-filter="backend">Backend</button>
                 <button class="filter-btn" data-filter="web">Web</button>
             </div>
@@ -327,12 +346,15 @@
 
                 <!-- Project 1: Empower -->
                 <div class="project-card" data-category="automatizacion">
-                    <div class="project-category cat-automatizacion">Automatización <span class="badge-actual">●
-                            Actual</span></div>
+                    <div class="project-category cat-automatizacion">
+                        <span data-i18n="cat.auto">Automatización</span>
+                        <span class="badge-actual">● <span data-i18n="badge.current">Actual</span></span>
+                    </div>
                     <div class="project-content">
-                        <h3>Empower – Apertura de Cuentas</h3>
-                        <p class="role">Test Automation Engineer · Globant (2025 – Presente)</p>
-                        <p>Automatización de flujos críticos de UI y API para la apertura de cuentas y el dashboard
+                        <h3 data-i18n="proj1.title">Empower – Apertura de Cuentas</h3>
+                        <p class="role" data-i18n="proj1.role">Test Automation Engineer · Globant (2025 – Presente)</p>
+                        <p data-i18n="proj1.desc">Automatización de flujos críticos de UI y API para la apertura de
+                            cuentas y el dashboard
                             de Net Worth de una plataforma fintech de gestión de patrimonio.</p>
                         <div class="tags">
                             <span>Selenium WebDriver</span>
@@ -346,11 +368,12 @@
 
                 <!-- Project 2: E2E Sales -->
                 <div class="project-card" data-category="automatizacion">
-                    <div class="project-category cat-automatizacion">Automatización</div>
+                    <div class="project-category cat-automatizacion" data-i18n="cat.auto">Automatización</div>
                     <div class="project-content">
-                        <h3>E2E Sales – Salud & Seguros</h3>
-                        <p class="role">QA Automation Engineer · Imagemaker (2023 – 2025)</p>
-                        <p>Framework de automatización end-to-end para el proceso de ventas de una empresa del sector
+                        <h3 data-i18n="proj2.title">E2E Sales – Salud & Seguros</h3>
+                        <p class="role" data-i18n="proj2.role">QA Automation Engineer · Imagemaker (2023 – 2025)</p>
+                        <p data-i18n="proj2.desc">Framework de automatización end-to-end para el proceso de ventas de
+                            una empresa del sector
                             de salud y seguros, con gestión completa del ciclo de bugs y pipelines de CI en Azure
                             DevOps.</p>
                         <div class="tags">
@@ -365,11 +388,13 @@
 
                 <!-- Project 3: Salesforce CRM -->
                 <div class="project-card" data-category="automatizacion">
-                    <div class="project-category cat-automatizacion">Automatización</div>
+                    <div class="project-category cat-automatizacion" data-i18n="cat.auto">Automatización</div>
                     <div class="project-content">
-                        <h3>Salesforce CRM – C&W Communications</h3>
-                        <p class="role">Test Automation Engineer · Globant / Disney (2020 – 2023)</p>
-                        <p>Automatización de pruebas sobre la plataforma Salesforce para C&W Communications y el
+                        <h3 data-i18n="proj3.title">Salesforce CRM – C&W Communications</h3>
+                        <p class="role" data-i18n="proj3.role">Test Automation Engineer · Globant / Disney (2020 – 2023)
+                        </p>
+                        <p data-i18n="proj3.desc">Automatización de pruebas sobre la plataforma Salesforce para C&W
+                            Communications y el
                             proyecto M360, cubriendo flujos CRM complejos con casos de prueba de regresión e
                             integración.</p>
                         <div class="tags">
@@ -383,13 +408,15 @@
 
                 <!-- Project 4: Media Platform -->
                 <div class="project-card" data-category="automatizacion">
-                    <div class="project-category cat-automatizacion">Automatización</div>
+                    <div class="project-category cat-automatizacion" data-i18n="cat.auto">Automatización</div>
                     <div class="project-content">
-                        <h3>Media Search & Transform – Plataforma Streaming</h3>
-                        <p class="role">Test Automation Engineer · Globant / Disney (2020 – 2023)</p>
-                        <p>Automatización de pruebas de API y UI para plataformas de búsqueda y transformación de
-                            medios. Integración de reportes con Report Portal y configuración de pipelines CI/CD
-                            en GitLab y Jenkins.</p>
+                        <h3 data-i18n="proj4.title">Media Search & Transform – Plataforma Streaming</h3>
+                        <p class="role" data-i18n="proj4.role">Test Automation Engineer · Globant / Disney (2020 – 2023)
+                        </p>
+                        <p data-i18n="proj4.desc">Automatización de pruebas de API y UI para plataformas de búsqueda y
+                            transformación de
+                            medios. Integración de reportes con Report Portal y configuración de pipelines CI/CD en
+                            GitLab y Jenkins.</p>
                         <div class="tags">
                             <span>Robot Framework</span>
                             <span>Python</span>
@@ -404,11 +431,12 @@
                 <div class="project-card" data-category="backend">
                     <div class="project-category cat-backend">Backend</div>
                     <div class="project-content">
-                        <h3>Poste Italiane – REST API para POS</h3>
-                        <p class="role">Python Developer · Indra (2019 – 2020)</p>
-                        <p>Desarrollo de servicios REST API para el sistema de venta y mantenimiento de terminales
-                            POS de Poste Italiane. Diseño de endpoints, integración con base de datos y construcción
-                            de queries optimizados en PostgreSQL.</p>
+                        <h3 data-i18n="proj5.title">Poste Italiane – REST API para POS</h3>
+                        <p class="role" data-i18n="proj5.role">Python Developer · Indra (2019 – 2020)</p>
+                        <p data-i18n="proj5.desc">Desarrollo de servicios REST API para el sistema de venta y
+                            mantenimiento de terminales
+                            POS de Poste Italiane. Diseño de endpoints, integración con base de datos y construcción de
+                            queries optimizados en PostgreSQL.</p>
                         <div class="tags">
                             <span>Django REST Framework</span>
                             <span>Python</span>
@@ -422,11 +450,12 @@
                 <div class="project-card" data-category="backend">
                     <div class="project-category cat-backend">Backend</div>
                     <div class="project-content">
-                        <h3>SAVA – Portal Turístico</h3>
-                        <p class="role">Python Developer · Indra (2019 – 2020)</p>
-                        <p>Desarrollo backend para un portal de turismo español orientado a la gestión y venta
-                            de productos turísticos. API RESTful construida con Django para la integración con
-                            el front-end y servicios externos.</p>
+                        <h3 data-i18n="proj6.title">SAVA – Portal Turístico</h3>
+                        <p class="role" data-i18n="proj6.role">Python Developer · Indra (2019 – 2020)</p>
+                        <p data-i18n="proj6.desc">Desarrollo backend para un portal de turismo español orientado a la
+                            gestión y venta
+                            de productos turísticos. API RESTful construida con Django para la integración con el
+                            front-end y servicios externos.</p>
                         <div class="tags">
                             <span>Django REST Framework</span>
                             <span>Python</span>
@@ -440,11 +469,12 @@
                 <div class="project-card" data-category="web">
                     <div class="project-category cat-web">Web</div>
                     <div class="project-content">
-                        <h3>Sistema Financiero UTP</h3>
-                        <p class="role">Software Engineer · U. Tecnológica de Pereira (2015)</p>
-                        <p>Mejoras y mantenimiento de un sistema financiero web institucional. Diseño e
-                            implementación de los subsistemas de "compras y suministros" y "contratación"
-                            sobre una arquitectura Java con Oracle.</p>
+                        <h3 data-i18n="proj7.title">Sistema Financiero UTP</h3>
+                        <p class="role" data-i18n="proj7.role">Software Engineer · U. Tecnológica de Pereira (2015)</p>
+                        <p data-i18n="proj7.desc">Mejoras y mantenimiento de un sistema financiero web institucional.
+                            Diseño e
+                            implementación de los subsistemas de "compras y suministros" y "contratación" sobre una
+                            arquitectura Java con Oracle.</p>
                         <div class="tags">
                             <span>Java</span>
                             <span>Spring</span>
@@ -459,11 +489,12 @@
                 <div class="project-card" data-category="web">
                     <div class="project-category cat-web">Web</div>
                     <div class="project-content">
-                        <h3>Objetos Virtuales de Aprendizaje – SENA</h3>
-                        <p class="role">Web Developer · SENA (2013 – 2014 / 2016 – 2018)</p>
-                        <p>Diseño e implementación de Objetos Virtuales de Aprendizaje (VLO) interactivos
-                            integrados en Blackboard LMS. Construcción de servicios SCORM y definición del
-                            estándar de desarrollo front-end de la institución.</p>
+                        <h3 data-i18n="proj8.title">Objetos Virtuales de Aprendizaje – SENA</h3>
+                        <p class="role" data-i18n="proj8.role">Web Developer · SENA (2013 – 2014 / 2016 – 2018)</p>
+                        <p data-i18n="proj8.desc">Diseño e implementación de Objetos Virtuales de Aprendizaje (VLO)
+                            interactivos
+                            integrados en Blackboard LMS. Construcción de servicios SCORM y definición del estándar de
+                            desarrollo front-end de la institución.</p>
                         <div class="tags">
                             <span>JavaScript</span>
                             <span>Adobe Animate CC</span>
@@ -480,27 +511,28 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
             <div class="contact-content">
-                <p>¿Interesado en colaborar? ¡Hablemos!</p>
+                <p data-i18n="contact.subtitle">¿Interesado en colaborar? ¡Hablemos!</p>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Tu Nombre" required>
+                        <input type="text" data-i18n-placeholder="contact.name" placeholder="Tu Nombre" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Tu Email" required>
+                        <input type="email" data-i18n-placeholder="contact.email" placeholder="Tu Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        <textarea data-i18n-placeholder="contact.message" placeholder="Tu Mensaje" rows="5"
+                            required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.send">Enviar Mensaje</button>
                 </form>
                 <div class="footer-socials">
                     <a href="https://www.linkedin.com/in/cfdl/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/krif07" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="cv-download">
-                    <a href="#" class="btn btn-outline">Descargar CV Completo</a>
+                    <a href="#" class="btn btn-outline" data-i18n="contact.cv">Descargar CV Completo</a>
                 </div>
             </div>
         </div>
@@ -509,7 +541,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cristian Dávila. Todos los derechos reservados.</p>
+            <p data-i18n="footer.copy">&copy; 2026 Cristian Dávila. Todos los derechos reservados.</p>
         </div>
     </footer>
 

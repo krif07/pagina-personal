@@ -179,6 +179,31 @@ ul {
     color: white !important;
 }
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lang-toggle {
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: var(--text-gray);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-toggle:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 .hamburger {
     display: none;
     font-size: 1.5rem;
