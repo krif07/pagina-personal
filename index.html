@@ -547,6 +547,32 @@
         </div>
     </footer>
 
+    <!-- Chat Widget -->
+    <div id="chat-widget">
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <span class="chat-dot"></span>
+                    <span data-i18n="chat.title">Alter Ego IA</span>
+                </div>
+                <button id="chat-close" aria-label="Cerrar chat"><i class="fas fa-times"></i></button>
+            </div>
+            <iframe
+                id="chat-iframe"
+                src=""
+                data-src="https://krif-career-conversation.hf.space"
+                frameborder="0"
+                allow="microphone"
+                title="Cristian Dávila AI Alter Ego">
+            </iframe>
+        </div>
+        <button id="chat-toggle" aria-label="Abrir chat con Alter Ego IA">
+            <i class="fas fa-comment-dots" id="chat-icon-open"></i>
+            <i class="fas fa-times" id="chat-icon-close" style="display:none"></i>
+            <span class="chat-badge" data-i18n="chat.badge">IA</span>
+        </button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

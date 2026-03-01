@@ -107,6 +107,8 @@ const translations = {
     'contact.cv': 'Descargar CV',
     // Footer
     'footer.copy': '© 2025 Cristian Dávila. Todos los derechos reservados.',
+    'chat.title': 'Alter Ego IA',
+    'chat.badge': 'IA',
   },
 
   en: {
@@ -215,6 +217,8 @@ const translations = {
     'contact.cv': 'Download CV',
     // Footer
     'footer.copy': '© 2025 Cristian Dávila. All rights reserved.',
+    'chat.title': 'AI Alter Ego',
+    'chat.badge': 'AI',
   }
 };
 
@@ -383,4 +387,34 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // Chat widget
+  const chatToggle  = document.getElementById('chat-toggle');
+  const chatWindow  = document.getElementById('chat-window');
+  const chatClose   = document.getElementById('chat-close');
+  const chatIframe  = document.getElementById('chat-iframe');
+  const iconOpen    = document.getElementById('chat-icon-open');
+  const iconClose   = document.getElementById('chat-icon-close');
+  let   chatLoaded  = false;
+
+  function openChat() {
+    chatWindow.classList.remove('hidden');
+    iconOpen.style.display  = 'none';
+    iconClose.style.display = 'block';
+    if (!chatLoaded) {
+      chatIframe.src = chatIframe.dataset.src;
+      chatLoaded = true;
+    }
+  }
+
+  function closeChat() {
+    chatWindow.classList.add('hidden');
+    iconOpen.style.display  = 'block';
+    iconClose.style.display = 'none';
+  }
+
+  chatToggle.addEventListener('click', () => {
+    chatWindow.classList.contains('hidden') ? openChat() : closeChat();
+  });
+  chatClose.addEventListener('click', closeChat);
 });
