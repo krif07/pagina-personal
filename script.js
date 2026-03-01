@@ -251,6 +251,14 @@ function setLanguage(lang) {
   if (btn) btn.textContent = lang === 'es' ? 'EN' : 'ES';
 }
 
+// ─── EmailJS config ───────────────────────────────────────────────────────────
+
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';   // reemplazar
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';   // reemplazar
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // reemplazar
+
+emailjs.init(EMAILJS_PUBLIC_KEY);
+
 // ─── DOM ready ────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -315,6 +323,39 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease-out';
     observer.observe(el);
+  });
+
+  // Contact form
+  const contactForm = document.getElementById('contact-form');
+  const contactBtn = document.getElementById('contact-btn');
+  const feedback = document.getElementById('form-feedback');
+
+  const feedbackMessages = {
+    sending: { es: 'Enviando...', en: 'Sending...' },
+    success: { es: '¡Mensaje enviado! Te responderé pronto.', en: 'Message sent! I\'ll get back to you soon.' },
+    error: { es: 'Hubo un error al enviar. Intentá de nuevo.', en: 'Something went wrong. Please try again.' },
+  };
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const originalText = contactBtn.textContent;
+    contactBtn.disabled = true;
+    contactBtn.textContent = feedbackMessages.sending[currentLang];
+    feedback.className = 'form-feedback hidden';
+
+    try {
+      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm);
+      feedback.textContent = feedbackMessages.success[currentLang];
+      feedback.className = 'form-feedback success';
+      contactForm.reset();
+    } catch {
+      feedback.textContent = feedbackMessages.error[currentLang];
+      feedback.className = 'form-feedback error';
+    } finally {
+      contactBtn.disabled = false;
+      contactBtn.textContent = originalText;
+    }
   });
 
   // Portfolio filter
